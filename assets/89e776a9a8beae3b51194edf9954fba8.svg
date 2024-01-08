@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 85.5" data-name="Слой 2" id="_Слой_2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fbfbfb;
+        font-family: MontserratRoman-Bold, Montserrat;
+        font-size: 77.09px;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #7964a5;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #5b5687;
+      }
+    </style>
+  </defs>
+  <g data-name="Слой 1" id="_Слой_1-2">
+    <g>
+      <path d="M74,20.25c0-8.47-6.87-15.33-15.33-15.33H15.33C6.87,4.92,0,11.78,0,20.25v51.14h74V20.25Z" class="cls-2"/>
+      <text transform="translate(7.77 65.53) scale(.81 1)" class="cls-1"><tspan y="0" x="0">2</tspan></text>
+      <circle r="9.87" cy="21.43" cx="58.17" class="cls-3"/>
+    </g>
+  </g>
+</svg>
