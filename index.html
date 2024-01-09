@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<!-- Created with https://packager.turbowarp.org/ -->
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poiret+One&display=swap" rel="stylesheet">
   <title>Turing Machine_helper</title>
   <style>
     body {
       color: #ffffff;
-      font-family: sans-serif;
+      font-family: Montserrat;
       overflow: hidden;
       margin: 0;
       padding: 0;
     }
     :root, body.is-fullscreen {
-      background-color: #000000;
+      background-color: #ffffff;
     }
     [hidden] {
       display: none !important;
@@ -31,6 +32,7 @@
     }
 
     #app, #loading, #error, #launch {
+      font-size: 1vh;
       position: absolute;
       top: 0;
       left: 0;
@@ -46,10 +48,10 @@
       cursor: default;
       user-select: none;
       -webkit-user-select: none;
-      background-color: #000000;
+      background-color: #ffffff;
     }
     #launch {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: #ffffff;
       cursor: pointer;
     }
     .green-flag {
@@ -68,19 +70,19 @@
       
     }
     .progress-bar-outer {
-      border: 1px solid currentColor;
-      height: 10px;
-      width: 200px;
+      height: 0.5vh;
+      width: 20vh;
       max-width: 200px;
     }
     .progress-bar-inner {
       height: 100%;
       width: 0;
-      background-color: currentColor;
+      background-color: #45993d;
     }
     .loading-text, noscript {
+      color: #45993d;
       font-weight: normal;
-      font-size: 36px;
+      font-size: 2vh;
       margin: 0 0 16px;
     }
     .loading-image {
@@ -160,7 +162,7 @@
 
   <div id="loading" class="screen">
     <noscript>Enable JavaScript</noscript>
-    <h1 class="loading-text">Загрузка...</h1>
+    <h1 class="loading-text">ЗАГРУЗКА</h1>
     
     <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
   </div>
