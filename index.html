@@ -10,7 +10,7 @@
   <title>Turing Machine_helper</title>
   <style>
     body {
-      color: #ffffff;
+      color: #0c690e;
       font-family: Montserrat;
       overflow: hidden;
       margin: 0;
@@ -77,10 +77,9 @@
     .progress-bar-inner {
       height: 100%;
       width: 0;
-      background-color: #45993d;
+      background-color: currentColor;
     }
     .loading-text, noscript {
-      color: #45993d;
       font-weight: normal;
       font-size: 2vh;
       margin: 0 0 16px;
@@ -113,10 +112,10 @@
       border-radius: 4px;
     }
     .control-button:hover {
-      background: #ff4c4c26;
+      background: #0d683026;
     }
     .control-button.active {
-      background: #ff4c4c59;
+      background: #0d683059;
     }
     .fullscreen-button {
       background: white !important;
@@ -144,7 +143,7 @@
     }
     
   </style>
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iX9Ch0LvQvtC5XzIiIGRhdGEtbmFtZT0i0KHQu9C+0LkgMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTY0LjQ1IDE2NC40NSI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogIzMxYjU2MjsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIgewogICAgICAgIHN0cm9rZS13aWR0aDogMHB4OwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICNmZmY7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxnIGlkPSJf0KHQu9C+0LlfMS0yIiBkYXRhLW5hbWU9ItCh0LvQvtC5IDEiPgogICAgPGc+CiAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTgyLjIzLDBDMzYuODEsMCwwLDM2LjgxLDAsODIuMjNzMzYuODEsODIuMjMsODIuMjMsODIuMjMsODIuMjMtMzYuODEsODIuMjMtODIuMjNTMTI3LjY0LDAsODIuMjMsMFpNNTMuMDEsMTA4LjI4YzAsMS43Ny0xLjQ0LDMuMjEtMy4yMSwzLjIxaC01LjI4Yy0xLjc3LDAtMy4yMS0xLjQzLTMuMjEtMy4yMXYtMTYuOTdjMC0xLjc3LDEuNDQtMy4yMSwzLjIxLTMuMjFoNS4yOGMxLjc3LDAsMy4yMSwxLjQzLDMuMjEsMy4yMXYxNi45N1pNNzAuNjUsNjEuNDZjMCwxLjc3LTEuNDQsMy4yMS0zLjIxLDMuMjFoLTExLjEyYy0xLjgsMC0zLjI2LDEuNDYtMy4yNiwzLjI3djUuMjJjMCwxLjc3LTEuNDQsMy4yMS0zLjIxLDMuMjFoLTUuMjhjLTEuNzcsMC0zLjIxLTEuNDQtMy4yMS0zLjIxdi01LjIyYzAtMS44LTEuNDYtMy4yNy0zLjI2LTMuMjdoLTExLjIxYy0xLjc3LDAtMy4yMS0xLjQzLTMuMjEtMy4yMXYtNS4yOGMwLTEuNzcsMS40NC0zLjIxLDMuMjEtMy4yMWg0MC41NWMxLjc3LDAsMy4yMSwxLjQ0LDMuMjEsMy4yMXY1LjI4Wk0xMTkuMDcsMTA4LjQ4YzAsMS42Ni0xLjM0LDMtMywzaC01LjY5Yy0xLjY2LDAtMy0xLjM0LTMtM3YtNS42OWMwLTEuNjYsMS4zNS0zLDMtM2g1LjY5YzEuNjYsMCwzLDEuMzQsMywzdjUuNjlaTTEyOS4wOCw2MS43MWMwLDEuNjYtMS4zNSwzLTMsM2gtNS42M2MtMS42OSwwLTMuMDYsMS4zNy0zLjA2LDMuMDZ2MTcuMzJjMCwxLjY2LTEuMzQsMy0zLDNoLTUuNjljLTEuNjYsMC0zLTEuMzQtMy0zdi0xNy4zMmMwLTEuNjktMS4zNy0zLjA2LTMuMDYtMy4wNmgtNS41N2MtMS42OSwwLTMuMDYsMS4zNy0zLjA2LDMuMDZ2MjkuMDJjMCwxLjY2LTEuMzQsMy0zLDNoLTUuNjljLTEuNjYsMC0zLTEuMzQtMy0zdi00MC43N2MwLTEuNjYsMS4zNS0zLDMtM2g0MC43N2MxLjY2LDAsMywxLjM0LDMsM3Y1LjY5Wk0xMzcuNTYsMTExLjQ4aC01LjI4Yy0xLjc3LDAtMy4yMS0xLjQ0LTMuMjEtMy4yMXYtMjguNjdjMC0xLjc3LDEuNDQtMy4yMSwzLjIxLTMuMjFoNS4yOGMxLjc3LDAsMy4yMSwxLjQ0LDMuMjEsMy4yMXYyOC42N2MwLDEuNzctMS40NCwzLjIxLTMuMjEsMy4yMVoiLz4KICAgICAgPHJlY3QgY2xhc3M9ImNscy0yIiB4PSIxMDcuMzgiIHk9Ijk5Ljc5IiB3aWR0aD0iMTEuNjkiIGhlaWdodD0iMTEuNjkiIHJ4PSIzIiByeT0iMyIvPgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik02Ny40NSw1Mi45N0gyNi44OWMtMS43NywwLTMuMjEsMS40NC0zLjIxLDMuMjF2NS4yOGMwLDEuNzcsMS40NCwzLjIxLDMuMjEsMy4yMWgxMS4yMWMxLjgsMCwzLjI2LDEuNDYsMy4yNiwzLjI3djUuMjJjMCwxLjc3LDEuNDQsMy4yMSwzLjIxLDMuMjFoNS4yOGMxLjc3LDAsMy4yMS0xLjQ0LDMuMjEtMy4yMXYtNS4yMmMwLTEuOCwxLjQ2LTMuMjcsMy4yNi0zLjI3aDExLjEyYzEuNzcsMCwzLjIxLTEuNDMsMy4yMS0zLjIxdi01LjI4YzAtMS43Ny0xLjQ0LTMuMjEtMy4yMS0zLjIxWiIvPgogICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik00NC41Myw4OC4xaDUuMjhjMS43NywwLDMuMjEsMS40NCwzLjIxLDMuMjF2MTYuOTdjMCwxLjc3LTEuNDQsMy4yMS0zLjIxLDMuMjFoLTUuMjhjLTEuNzcsMC0zLjIxLTEuNDQtMy4yMS0zLjIxdi0xNi45N2MwLTEuNzcsMS40NC0zLjIxLDMuMjEtMy4yMVoiLz4KICAgICAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTI2LjA3LDUzLjAyaC00MC43N2MtMS42NiwwLTMsMS4zNC0zLDN2NDAuNzdjMCwxLjY2LDEuMzUsMywzLDNoNS42OWMxLjY2LDAsMy0xLjM0LDMtM3YtMjkuMDJjMC0xLjY5LDEuMzctMy4wNiwzLjA2LTMuMDZoNS41N2MxLjY5LDAsMy4wNiwxLjM3LDMuMDYsMy4wNnYxNy4zMmMwLDEuNjYsMS4zNSwzLDMsM2g1LjY5YzEuNjYsMCwzLTEuMzQsMy0zdi0xNy4zMmMwLTEuNjksMS4zNy0zLjA2LDMuMDYtMy4wNmg1LjYzYzEuNjYsMCwzLTEuMzQsMy0zdi01LjY5YzAtMS42Ni0xLjM1LTMtMy0zWiIvPgogICAgICA8cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjEyOS4wOCIgeT0iNzYuNCIgd2lkdGg9IjExLjY5IiBoZWlnaHQ9IjM1LjA4IiByeD0iMy4yMSIgcnk9IjMuMjEiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPg==">
 </head>
 <body>
@@ -223,7 +222,7 @@
       };
 
       scaffolding.setUsername("nikolyafms".replace(/#/g, () => Math.floor(Math.random() * 10)));
-      scaffolding.setAccentColor("#ff4c4c");
+      scaffolding.setAccentColor("#0d6830");
 
       scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@Turing_Machine_helper.sb3"));
 
